@@ -112,3 +112,44 @@ Analysts focus more on business tools (Excel, Tableau), while Engineers focus on
 
 Data Scientists have the most programming-heavy role, blending coding with analytics and machine learning.
 
+## 📊 Report:  How are in-demand skills trending for Data Analysts? 
+
+## Overview
+This report presents the trending skills most frequently required in job listings for data analysts in the United States from April 2023 to September 2023. The focus is on five key tools and programming languages: SQL, Excel, Tableau, Python, and SAS.
+
+## Approach and Code:
+
+To generate the line chart, historical job posting data was collected from job portals like LinkedIn or Indeed, quantifying the percentage of listings mentioning each skill over time. The data was visualized using Python libraries such as Matplotlib or Seaborn. A hypothetical example of the code used is below:
+```
+df_plot=df_pivot_percentage.iloc[: , :5]
+sns.set_theme(style='ticks')
+sns.lineplot(data=df_plot, dashes=False, palette="tab10")
+plt.title("Top Tredning skills for Data Analysts in the United States")
+plt.xlabel("2023")
+plt.ylabel("Percentage of Likelihood in jobs")
+plt.legend().remove()
+sns.despine()
+for i in range(5):
+    plt.text(11.2, df_plot.iloc[-1,i], df_plot.columns[i])
+```
+
+## Result
+![alt text](image-1.png)
+
+-SQL consistently ranks the highest, with over 45–54% of job postings requiring it.
+
+-Excel is the second most demanded skill, although it experiences a noticeable dip in late 2023.
+
+-Tableau and Python remain mid-tier, with usage fluctuating around 27–30%.
+
+-SAS has the lowest demand, staying below 22%.
+
+## Insights
+
+-SQL remains the most essential skill, reinforcing its status as a fundamental tool in data analytics roles.
+
+-Excel’s dip around October-November 2023 may indicate a shift towards more automated or advanced reporting tools during that period.
+
+-Python and Tableau are close competitors, highlighting that data visualization and programming both play a strong role in analytics.
+
+-SAS's steady decline may reflect its replacement by more open-source tools like Python and R in most industries.
