@@ -198,3 +198,75 @@ plt.show()
 -Data Scientists and Engineers tend to have higher ceilings in salary growth compared to Analysts.
 
 -A considerable number of outliers at the high end suggest that specialization or location may lead to very high compensation.
+
+
+
+## 📊Report: Most Optimal Skills for Data Analysts in the US
+
+## Overview
+
+This analysis aims to identify the most valuable skills for data analysts in the US by comparing median yearly salaries with the percentage of job postings that require each skill. The chart helps job seekers and professionals understand which tools and technologies are both in-demand and high-paying, allowing for more strategic career development.
+
+## Approach and code used:
+
+Job posting data was extracted from the dataset specific to data analyst roles in the US.
+
+Skills such as SQL, Python, Excel, Tableau, etc., were extracted from job descriptions.
+
+### Feature Engineering:
+
+-For each skill, the following metrics were calculated:
+
+-Median Salary for roles mentioning the skill.
+
+-Percentage of Total Job Postings requiring that skill.
+
+### Categorization:
+
+-Skills were grouped into four technology categories:
+
+-Programming (e.g., Python, R, Go)
+
+-Analyst Tools (e.g., Excel, Power BI, Tableau)
+
+-Databases (e.g., SQL Server, Oracle)
+
+-Cloud (if applicable)
+
+
+
+## Results:
+![alt text](image-3.png)
+
+High Demand, High Pay:
+
+-SQL appears in nearly 60% of data analyst jobs and offers a strong median salary (~$92K).
+
+-Python is used in 30% of roles and has one of the highest salaries ($97K).
+
+### High Salary, Niche Demand:
+
+-Oracle and SQL Server offer excellent compensation (~$96K–$94K), but are required in fewer roles (~10–15%).
+
+-R and Go are also high-paying skills, despite being used in fewer job listings.
+
+### Moderate Tools:
+
+-Tableau and Power BI offer a balance of decent demand (20–30%) and competitive salaries (~$90K+).
+
+-Excel is highly requested (40%) but has a lower median salary ($86K).
+
+### Low-Impact Skills:
+
+-Word and PowerPoint appear in fewer jobs and also fall on the lower end of the salary spectrum (~$82K–$85K).
+
+## Insights
+-Python offers the best return on investment among programming skills due to its high salary and steady demand.
+
+-SQL is essential for almost every data analyst role; mastering it significantly increases job opportunities.
+
+-Visualization tools like Tableau and Power BI are valuable complements to core technical skills.
+
+-Skills like Excel remain crucial but are less correlated with higher salaries.
+
+-Candidates should consider supplementing basic tools with in-demand programming or database technologies to increase their earning potential.
