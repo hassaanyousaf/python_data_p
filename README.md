@@ -153,3 +153,48 @@ for i in range(5):
 -Python and Tableau are close competitors, highlighting that data visualization and programming both play a strong role in analytics.
 
 -SAS's steady decline may reflect its replacement by more open-source tools like Python and R in most industries.
+
+## 📊 Report: How well do jobs and skills pay for Data Analysts?
+
+## Overview
+
+This report visualizes the salary distributions for different data-related job titles in the United States, comparing average annual salaries for both junior and senior-level positions using a boxplot.
+
+## Approach and Code Used
+
+The data (df_us) contains salary and job title information. A boxplot was generated using Seaborn and Matplotlib to compare the salary range, median, and outliers for each job title.
+
+### Code:
+```
+sns.boxplot(data=df_top5, x='salary_year_avg', y='job_title_short')
+sns.set_theme(style='ticks')
+
+# this is all the same
+plt.title('Salary Distributions in the United States')
+plt.xlabel('Yearly Salary (USD)')
+plt.ylabel('')
+plt.xlim(0, 600000)
+
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+
+plt.show()
+```
+
+## Results
+![alt text](image-2.png)
+
+-Senior Data Scientist roles show the highest median salary and widest distribution, with some outliers earning close to $600K.
+
+-Data Scientist and Data Engineer also have strong median salaries around $150K–$160K.
+
+-Data Analyst positions have a lower salary range, with medians near $90K–$100K.
+
+-Across all roles, senior positions consistently earn more than their junior counterparts.
+
+## Insights
+-The plot clearly demonstrates the financial advantage of moving into senior roles within the data domain.
+
+-Data Scientists and Engineers tend to have higher ceilings in salary growth compared to Analysts.
+
+-A considerable number of outliers at the high end suggest that specialization or location may lead to very high compensation.
